@@ -1,13 +1,17 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Medicinas Rosario";
 }
 <hr />
-<div class="sidenav">
-    <img src="~/Images/banner.jpg"/>
-</div>
 <div class="row">
-    <div class="col-md-6">
-        <div class="carousel" id="Myindexc">
+    <div class="col-sm-2">
+        <div class="sidenav hidden-xs">
+            <a href="http://www.medicinasrosario.com.mx/documents/Guia_Farmacias.pdf">
+                <img src="~/Images/banner.jpg" />
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="carousel center-block" id="Myindexc">
             <ol class="carousel-indicators">
                 <li data-target="#Myindexc" data-slide-to="0" class="active"></li>
                 <li data-target="#Myindexc" data-slide-to="1"></li>
@@ -50,23 +54,30 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
     </div>
-    <div class="col-md-6">
-        <h2>Quienes Somos:</h2>
-        <p>
-            Somos  una empresa mexicana nacida en 1977, dedicada a la distribución de medicamentos genéricos,
-            materiales de curación e insumos para la salud. 
-            Desde entonces nos hemos mantenido en constante evolución orientados hacia la calidad,
-            el servicio y la mejora continua, ejerciendo objetivos vanguardistas que permitan satisfacer las necesidades de nuestros clientes y amigos,
-            en un mercado cada vez más competitivo.
-        </p>
-        <p><a class="btn btn-default" href="http://medicinasrosario.com.mx/contacto.aspx">Sobre Nosotros &raquo;</a></p>
+    <div class="col-sm-2">
+        <div class="sidenavL hidden-xs">
+            <a href="http://www.medicinasrosario.com.mx/documents/altaCliente.pdf">
+                <img src="~/Images/altaCliente.jpg"/>
+            </a>
+        </div>
     </div>
 </div>
 
 <div class="row">
-    
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-12 bg-info">
+        <h2>Quienes Somos:</h2>
+        <p>
+            Somos  una empresa mexicana nacida en 1977, dedicada a la distribución de medicamentos genéricos,
+            materiales de curación e insumos para la salud.
+            Desde entonces nos hemos mantenido en constante evolución orientados hacia la calidad,
+            el servicio y la mejora continua, ejerciendo objetivos vanguardistas que permitan satisfacer las necesidades de nuestros clientes y amigos,
+            en un mercado cada vez más competitivo.
+        </p>
+        <p><a class="btn btn-default bg-primary" href="http://medicinasrosario.com.mx/contacto.aspx">Sobre Nosotros &raquo;</a></p>
+    </div>
+    <div class="col-md-6 col-lg-6 bg-primary">
         <h2>Nosotros</h2>
         <p>
             Contamos con una sucursal en la ciudad de Querétaro, se encuentra ubicada en Gasoducto #100 Bodega 4,
@@ -74,15 +85,15 @@
             Tels. (442) 222-9409  /  222-8453 / 222-8162  / 262-0273.
             Nuestro horario de atención es de lunes a viernes de 09:00 am a 05:00 pm y sábados de 09:00 am a 1:00 pm.
         </p>
-        <p><a class="btn btn-default" href="http://medicinasrosario.com.mx/nosotros.aspx">Contactanos &raquo;</a></p>
+        <p><a class="btn btn-default bg-info" href="http://medicinasrosario.com.mx/nosotros.aspx">Contactanos &raquo;</a></p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-6 bg-info">
         <h2>Nuestros Clientes</h2>
         <p>
             La fuerza de ventas con la que contamos está formada por vendedores especializados y capacitados que visitan a cada uno de los distribuidores,
             empresas, centros de salud, hospitales e instituciones que deseen ser parte de nuestra familia de clientes.
             También contamos con atención personalizada en nuestras oficinas y atención telefónica desde cualquier parte de la república.
         </p>
-        <p><a class="btn btn-default" href="http://medicinasrosario.com.mx/laboratorios.aspx">Registrate Facil &raquo;</a></p>
+        <p><a class="btn btn-default bg-primary" href="http://medicinasrosario.com.mx/laboratorios.aspx">Registrate Facil &raquo;</a></p>
     </div>
 </div>

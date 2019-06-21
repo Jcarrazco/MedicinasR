@@ -3,10 +3,12 @@
     padding-bottom: 20px;
 }
 
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -25,13 +27,13 @@ textarea {
 
 .carousel {
     background-color: #006092;
-    width: 480px;
-    height: 316px;
+    margin:92px;
 }
 
 .carousel-inner > .item > img {
     width: 480px;
     height: 316px;
+    margin: auto;
 }
 
 .Neg{
@@ -39,11 +41,33 @@ textarea {
 }
 
 .sidenav {
+    margin:0;
     height: 100%;
     width: 160px;
-    position: fixed;
+    position: static;
     z-index: 1;
     top: 0;
     right: 0;
     background-color: transparent;
+}
+
+.sidenavL {
+    height: 100%;
+    width: 160px;
+    position: static;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+footer{
+    background-color: white;
+    color: #006092;
+    min-height:100px;
+}
+
+.logos{
+    width: 100px;
+    height: 50px;
 }

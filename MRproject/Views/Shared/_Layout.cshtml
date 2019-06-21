@@ -6,12 +6,13 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="icon" href="~/Images/icon.ico"/>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #006092">
         <div class="container">
             <div class="navbar-header">
-                <img src="~/Images/logo.jpg"/>
+                <img src="~/Images/logo.jpg" />
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -21,21 +22,65 @@
                     <li style="font-size: 22px">@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>
             </div>
+            <span>@ViewBag.User</span>
         </div>
         <div class="container-fluid text-right" style="background-color:lightgrey">
             <span>@ViewBag.Date</span>
         </div>
     </div>
-    <div class="container-fluid body-content" style="margin-right: 160px">
+    <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Medicinas Rosario</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <hr />
+    <footer class="table-bordered">
+        <div class="row">
+            <div class="col-sm-4 col-md-6 col-lg-4">
+                <img src="~/Images/newlogo.jpg" style="margin-top: 150px; margin-left: 20px"/>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <h3>Medicinas Rosario</h3>
+                <h4>Servicios</h4>
+                <p>Servicio 1</p>
+                <p>Servicio 2</p>
+                <p>Servicio 3</p>
+                <p>Servicio 4</p>
+                <p>Servicio 5</p>
+            </div>
+            <div class="visible-md-block visible-lg-block col-md-12 col-lg-4">
+                <h3 class="text-center">Laboratorios que distribuimos</h3>
+                <div class="row">
+                    <div class="col-md-1 logos"><img src="~/Images/labs/AMSA.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/ATLANTIS.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/BIOMEP.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/BRULUAGSA.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/BRULUART.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/CMD.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/COLLINS.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/DEGORTHS.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/GROSSMAN.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/LIFERPAL.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/LOEFFLER.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/MAVER.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/MAVI.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/MAYO.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/NATUREX.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/NOVAG.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/PHARMACAPS.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/PISA.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/RAYERE.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/SERRAL.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/SONS.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/TERUMO.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/ULTRA.jpg" /></div>
+                    <div class="col-md-1 logos"><img src="~/Images/labs/WERMAR.jpg" /></div>
+                </div>
+            </div>
+        </div>
+        <p class="left">&copy; @DateTime.Now.Year - Medicinas Rosario</p>
+    </footer>
 </body>
 </html>
