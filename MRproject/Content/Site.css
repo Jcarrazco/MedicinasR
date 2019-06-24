@@ -27,13 +27,18 @@ textarea {
 
 .carousel {
     background-color: #006092;
-    margin:92px;
+    margin: 0;
+    padding: 92px;
 }
 
+.carousel-inner{
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
 .carousel-inner > .item > img {
-    width: 480px;
-    height: 316px;
-    margin: auto;
+    height: auto;
+    width: 100%;
 }
 
 .Neg{
@@ -41,9 +46,9 @@ textarea {
 }
 
 .sidenav {
+    height: 500px;
+    width: 170px;
     margin:0;
-    height: 100%;
-    width: 160px;
     position: static;
     z-index: 1;
     top: 0;
@@ -52,8 +57,8 @@ textarea {
 }
 
 .sidenavL {
-    height: 100%;
-    width: 160px;
+    height: 500px;
+    width: 170px;
     position: static;
     z-index: 1;
     top: 0;
@@ -70,4 +75,16 @@ footer{
 .logos{
     width: 100px;
     height: 50px;
+}
+
+.img-center{
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+}
+
+.texthead{
+    background-color: #006092;
+    color: white;
 }
