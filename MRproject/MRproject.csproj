@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -141,9 +142,12 @@
     <Content Include="Images\180603.jpg" />
     <Content Include="Images\altaCliente.jpg" />
     <Content Include="Images\banner.jpg" />
+    <Content Include="Images\Bussiness.jpg" />
     <Content Include="Images\compromiso.jpg" />
     <Content Include="Images\comunicacion.jpg" />
     <Content Include="Images\comunidad.jpg" />
+    <Content Include="Images\contacto.jpg" />
+    <Content Include="Images\contacto1.jpg" />
     <Content Include="Images\favorito.jpg" />
     <Content Include="Images\honestidad.jpg" />
     <Content Include="Images\icon.ico" />
@@ -172,7 +176,6 @@
     <Content Include="Images\labs\TERUMO.jpg" />
     <Content Include="Images\labs\ULTRA.jpg" />
     <Content Include="Images\labs\WERMAR.jpg" />
-    <Content Include="Images\location.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\Medi1.jpg" />
     <Content Include="Images\Medi2.jpg" />
@@ -186,6 +189,7 @@
     <Content Include="Images\trabajar.jpg" />
     <Content Include="Images\valores.jpg" />
     <Content Include="Images\vision.jpg" />
+    <Content Include="Javascript\JavaScript.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -213,6 +217,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Client\Form1.cshtml" />
+    <Content Include="Views\Client\Form2.cshtml" />
+    <Content Include="Views\Client\Form3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

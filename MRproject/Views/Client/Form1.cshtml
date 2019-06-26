@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .container-btns-register {
+    position: relative;
+    width: 100%;
+    }
+
+
+    .imginner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    .rowbtns{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+</style>
+<hr />
+<div class="container-btns-register">
+    <img class="center-block" alt="image" src="~/Images/Bussiness.jpg" />
+
+    <div class="page-header text-center imginner">
+        <h1 class="texthead">Registro nuevos Clientes</h1>
+        <p>Puede registrarse en linea o descargar nuestro formato y enviarlo a nuestro correo.</p>
+    </div>
+    <div class="row rowbtns">
+        <div class="col-xs-12 col-sm-6 text-center">
+            <a href="@Url.Action("Form2","Client")">
+                <input type="submit" class="btn btn-success inputleft" value="Registro en linea" />
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center">
+            <a href="http://www.medicinasrosario.com.mx/documents/altaCliente.pdf">
+                <input type="submit" class="btn btn-info" value="Descargar PDF" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-6 text-center">
+        <h3 class="texthead">Beneficios de Registarte:</h3>
+        <p>
+            Sed vel ligula eu leo pretium vehicula.
+            Aenean vestibulum orci laoreet lobortis vulputate.
+            Sed ac justo vestibulum, sagittis sapien vel, pellentesque lorem.
+            Nam eget nunc fermentum arcu pellentesque ullamcorper in nec libero.
+            Mauris commodo nibh id sem fermentum, et eleifend ante condimentum.
+        </p>
+    </div>
+    <div class="col-sm-12 col-md-6 text-center">
+        <h3 class="texthead">Promociones Exclusivas:</h3>
+        <p>
+            Sed vel ligula eu leo pretium vehicula.
+            Aenean vestibulum orci laoreet lobortis vulputate.
+            Sed ac justo vestibulum, sagittis sapien vel, pellentesque lorem.
+            Nam eget nunc fermentum arcu pellentesque ullamcorper in nec libero.
+            Mauris commodo nibh id sem fermentum, et eleifend ante condimentum.
+        </p>
+    </div>
+</div>
+

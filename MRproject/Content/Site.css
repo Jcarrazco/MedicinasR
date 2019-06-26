@@ -88,3 +88,26 @@ footer{
     background-color: #006092;
     color: white;
 }
+
+.textli{
+    font-size: 22px;
+    color: white;
+}
+
+.rowcontact {
+    width: 100%;
+    background-color: #006092; 
+    color: white;
+}
+
+.btn-b1{
+    background-color: lightgreen;
+    color:azure;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bg-jbtrans{
+    background-color: transparent;
+}
+

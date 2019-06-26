@@ -19,7 +19,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li style="font-size: 22px">@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li style="font-size: 22px">@Html.ActionLink("Nosotros", "About", "Home")</li>
-                    <li style="font-size: 22px">@Html.ActionLink("Laboratorio", "Contact", "Home")</li>
                     <li style="font-size: 22px">@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>
             </div>
@@ -35,21 +34,20 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Javascript/JavaScript.js")
     @RenderSection("scripts", required: false)
     <hr />
     <footer class="table-bordered">
         <div class="row">
-            <div class="col-sm-4 col-md-6 col-lg-4">
-                <img src="~/Images/newlogo.jpg" style="margin-top: 150px; margin-left: 20px"/>
+            <div class="visible-md-block visible-lg-block col-md-6 col-lg-4" style="padding-top: 40px; padding-left: 30px">
+                <img src="~/Images/newlogo.jpg" style="height:120px; width: 200px" />
             </div>
-            <div class="col-sm-8 col-md-6 col-lg-4">
-                <h3>Medicinas Rosario</h3>
-                <h4>Servicios</h4>
-                <p>Servicio 1</p>
-                <p>Servicio 2</p>
-                <p>Servicio 3</p>
-                <p>Servicio 4</p>
-                <p>Servicio 5</p>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                <form action="@Url.Action("Contact","Home")">
+                    <h3>Medicinas Rosario</h3>
+                    <h4>¿Tienes alguna duda?</h4>
+                    <input name="btncontact" id="btncontact" type="submit" class="btn btn-b1" value="Contáctanos" />
+                </form>
             </div>
             <div class="visible-md-block visible-lg-block col-md-12 col-lg-4">
                 <h3 class="text-center">Laboratorios que distribuimos</h3>
