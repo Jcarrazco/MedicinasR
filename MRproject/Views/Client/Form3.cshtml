@@ -4,8 +4,34 @@
 
 <hr />
 <div class="container">
-    <form>
-        <label></label>
-        <select></select>
+    <form action="@Url.Action("Form3","Client")">
+        <div class="form-group">
+            <label for="stateowner">Estado(Entidad federativa:)</label>
+            <select class="form-control" id="stateowner" required>
+                <option>Jalisco</option>
+                <option>Queretaro</option>
+            </select>
+            <br />
+            <label for="cityowner">Ciudad o Poblacion: </label>@*agregar funcion de ajax para lenar los campos*@
+            <select class="form-control" id="cityowner" required>
+                <option>Ciudad1</option>
+            </select>
+            <br />
+            <label for="delowner">Delegacion o Municipio: </label>
+            <select class="form-control" id="delowner" required>
+                <option>Municipio1</option>
+            </select>
+            <br />
+            <label for="locationow">Direccion: </label>
+            <input type="text" class="form-control" id="locationow" placeholder="Direccion de la empresa" required />
+            <br />
+            <label for="colony">Colonia: </label>
+            <input class="form-control" id="colony" type="text" placeholder="Colonia ej:'Loma bonita' " required/>
+            <br />
+            <label for="cpowner">Codigo Postal: </label>
+            <input class="form-control" id="cpowner" type="text" placeholder="ej:45400" required/>
+            <br />
+        </div>
+        <input type="submit" class="btn btn-success" value="Siguiente" />
     </form>
 </div>
