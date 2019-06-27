@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<hr />
+<div class="container center-block">
+    <h2>Registro nuevo:</h2>
+    <p>Introduzca sus datos de facturacion: </p><br />
+    <form action="@Url.Action("Form5","Client")">
+        <div id="formdirection" class="form-group">
+            <div class="row text-center" id="group1" name="group1">
+                <h4>Usar el mismo domicilio para la Facturacion?</h4>
+                <div class="col-xs-6">
+                    <input type="button" class="btn btn-primary" value="Si" onclick="confirmbtn(true)" />
+                </div>
+                <div class="col-xs-6">
+                    <input type="button" class="btn btn-primary" value="No" onclick="confirmbtn(false)" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

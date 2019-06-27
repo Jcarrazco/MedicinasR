@@ -7,7 +7,12 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/Site.css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="icon" href="~/Images/icon.ico"/>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Javascript/JavaScript.js")
+    @RenderSection("scripts", required: false)
+    <link rel="icon" href="~/Images/icon.ico" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #006092">
@@ -31,11 +36,6 @@
     <div class="container body-content">
         @RenderBody()
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Javascript/JavaScript.js")
-    @RenderSection("scripts", required: false)
     <hr />
     <footer class="table-bordered">
         <div class="row">

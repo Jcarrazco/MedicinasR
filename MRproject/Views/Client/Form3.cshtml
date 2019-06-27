@@ -4,7 +4,9 @@
 
 <hr />
 <div class="container">
-    <form action="@Url.Action("Form3","Client")">
+    <h2>Registro nuevo:</h2>
+    <p>Introduzca sus datos de domicilio en los campos siguientes:</p><br />
+    <form action="@Url.Action("Form4","Client")">
         <div class="form-group">
             <label for="stateowner">Estado(Entidad federativa:)</label>
             <select class="form-control" id="stateowner" required>
@@ -26,10 +28,10 @@
             <input type="text" class="form-control" id="locationow" placeholder="Direccion de la empresa" required />
             <br />
             <label for="colony">Colonia: </label>
-            <input class="form-control" id="colony" type="text" placeholder="Colonia ej:'Loma bonita' " required/>
+            <input class="form-control" id="colony" type="text" placeholder="Colonia ej:'Loma bonita' " required />
             <br />
             <label for="cpowner">Codigo Postal: </label>
-            <input class="form-control" id="cpowner" type="text" placeholder="ej:45400" required/>
+            <input class="form-control" id="cpowner" type="text" placeholder="ej:45400" required />
             <br />
         </div>
         <input type="submit" class="btn btn-success" value="Siguiente" />

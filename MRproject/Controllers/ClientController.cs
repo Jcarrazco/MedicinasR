@@ -23,5 +23,15 @@ namespace MRproject.Controllers
         {
             return View();
         }
+
+        public ActionResult Form4()
+        {
+            return View();
+        }
+
+        public ActionResult Form5()
+        {
+            return View();
+        }
     }
 }

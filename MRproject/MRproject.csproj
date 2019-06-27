@@ -220,6 +220,8 @@
     <Content Include="Views\Client\Form1.cshtml" />
     <Content Include="Views\Client\Form2.cshtml" />
     <Content Include="Views\Client\Form3.cshtml" />
+    <Content Include="Views\Client\Form4.cshtml" />
+    <Content Include="Views\Client\Form5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
