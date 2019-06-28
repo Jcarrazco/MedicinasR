@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<hr />
+<div class="container">
+    <h2>Registro nuevo:</h2>
+    <strong>Enviar sus documentos para  completar el registro.</strong><br />
+    <strong>Documentos requeridos:</strong>
+    <p>- Copia del identificación Oficial (INE)</p>
+    <p>- Comprobante de domicilio actualizado a nombre del solicitante.</p>
+    <p>- Aviso de Funcionamiento</p>
+    <p>- Copia del R.F.C.</p>
+    <div class="row">
+        <form action="@Url.Action("Index","Home")">
+            <div class="form-group">
+                <label for="uploadf">Seleccionar archivos para subir(jpg/pdf/word): </label>
+                <input id="uploadf" class="btn btn-success" type="button" value="Abrir" />
+            </div>
+            <input class="form-control btn btn-success" value="enviar" type="submit"/>
+        </form>
+    </div>
+</div>

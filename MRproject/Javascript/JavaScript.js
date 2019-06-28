@@ -185,3 +185,31 @@ function addp() {
         container.appendChild(form);
     }
 }
+
+function mapok() {
+    var container = document.getElementById("addcomment");
+    var form = document.createElement("form");
+    var label = document.createElement("h4");
+    var textarea = document.createElement("textarea");
+    var btn = document.createElement("input");
+    label.innerHTML = "Observaciones de entrega:";
+    textarea.name = "comment";
+    textarea.rows = "10";
+    textarea.cols = "50";
+    textarea.autofocus = true;
+    textarea.placeholder = "Describa detalles que faciliten la entrega";
+    btn.className = "form-control btn btn-success";
+    btn.type = "submit";
+    btn.value = "Enviar";
+
+    form.action = "http://localhost:50050/Client/Form7?";
+    form.appendChild(label);
+    form.appendChild(textarea);
+    form.appendChild(document.createElement("br"))
+    form.appendChild(btn);
+    container.appendChild(form);
+}
+
+function mapnok() {
+    window.location.href = "http://localhost:50050/Client/Form4?";
+}

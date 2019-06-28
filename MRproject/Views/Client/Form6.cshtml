@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<hr />
+<div class="container">
+    <h2>Registro nuevo:</h2>
+    <p>Ubicacion para el envio:  </p><br />
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <h3>¿Su direccion es correcta en el mapa?</h3>
+            <form>
+                <div class="form-inline">
+                    <input class="form-control btn btn-success" type="button" onclick="mapok()" value="Si" />
+                    <input class="form-control btn btn-info" type="button" onclick="mapnok()" value="No" />
+                </div>
+            </form>
+        </div>
+        <div id="map" class="col-sm-12">
+            <iframe width="600" height="450" frameborder="0" style="border:0" 
+                    src=@ViewData["Location"] 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div id="addcomment" class="col-sm-12">
+
+        </div>
+    </div>
+</div>
